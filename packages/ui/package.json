@@ -1,5 +1,5 @@
 {
-  "name": "@packages/editor-core",
+  "name": "@packages/ui",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -7,7 +7,10 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc -b",
-    "lint": "eslint src --ext .ts",
+    "lint": "eslint src --ext .ts,.tsx",
     "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "react": "^19.0.0"
   }
 }

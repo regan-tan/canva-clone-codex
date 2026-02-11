@@ -1,9 +1,10 @@
-export * from "./canvas-adapter";
-export * from "./command-bus";
-export * from "./editor";
-export * from "./element-store";
-export * from "./plugins";
-export * from "./render-optimizer";
-export * from "./shortcut-registry";
-export * from "./snapping";
-export * from "./types";
+export type ToolKind = 'select' | 'draw' | 'text' | 'shape';
+
+export interface Command {
+  id: string;
+  tool: ToolKind;
+}
+
+export function createCommand(id: string, tool: ToolKind): Command {
+  return { id, tool };
+}

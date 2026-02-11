@@ -1,9 +1,9 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "jsx": "react-jsx",
     "outDir": "dist",
     "rootDir": "src"
   },
-  "include": ["src/**/*.ts"],
-  "references": [{ "path": "../contracts" }]
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

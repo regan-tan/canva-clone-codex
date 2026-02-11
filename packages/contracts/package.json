@@ -1,5 +1,5 @@
 {
-  "name": "@packages/editor-core",
+  "name": "@packages/contracts",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -9,5 +9,8 @@
     "build": "tsc -b",
     "lint": "eslint src --ext .ts",
     "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
   }
 }

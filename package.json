@@ -1,0 +1,22 @@
+{
+  "name": "canva-clone-codex",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "lint": "node scripts/lint.mjs",
+    "typecheck": "node scripts/typecheck.mjs",
+    "test": "node --test packages/*/tests/*.test.js apps/*/tests/*.test.js apps/web/e2e/*.test.js",
+    "test:unit": "node --test packages/*/tests/*.test.js",
+    "test:integration": "node --test apps/api/tests/*.test.js apps/realtime/tests/*.test.js",
+    "test:e2e": "node --test apps/web/e2e/*.test.js",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "canva-clone-codex",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test apps/api/test/*.test.js"
+  }
+}

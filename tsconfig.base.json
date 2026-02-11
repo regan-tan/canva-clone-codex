@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@packages/contracts": ["packages/contracts/src/index.ts"],
+      "@packages/editor-core": ["packages/editor-core/src/index.ts"],
+      "@packages/exporters": ["packages/exporters/src/index.ts"],
+      "@packages/realtime-client": ["packages/realtime-client/src/index.ts"],
+      "@packages/ui": ["packages/ui/src/index.ts"]
+    }
+  }
+}

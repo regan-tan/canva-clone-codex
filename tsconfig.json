@@ -1,15 +1,13 @@
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "types": ["node", "vitest/globals"],
-    "baseUrl": "."
-  },
-  "include": ["apps/**/*.ts", "packages/**/*.ts"]
+  "files": [],
+  "references": [
+    { "path": "apps/web" },
+    { "path": "apps/api" },
+    { "path": "apps/realtime" },
+    { "path": "packages/editor-core" },
+    { "path": "packages/ui" },
+    { "path": "packages/realtime-client" },
+    { "path": "packages/contracts" },
+    { "path": "packages/exporters" }
+  ]
 }

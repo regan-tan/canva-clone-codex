@@ -1,0 +1,21 @@
+{
+  "name": "@apps/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src --ext .ts,.tsx",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "next": "^15.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@packages/editor-core": "workspace:*",
+    "@packages/ui": "workspace:*",
+    "@packages/realtime-client": "workspace:*",
+    "@packages/contracts": "workspace:*"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@apps/realtime",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -b",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "socket.io": "^4.8.1",
+    "yjs": "^13.6.20",
+    "@packages/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}

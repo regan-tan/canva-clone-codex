@@ -1,0 +1,166 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #111827;
+  background: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.editor-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-toolbar {
+  height: 56px;
+  border-bottom: 1px solid #d1d5db;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.editor-toolbar nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.editor-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 320px 1fr 320px;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.editor-left-column,
+.editor-right-panel {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 0.75rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.editor-left-panel input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.asset-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.6rem 0;
+}
+
+.asset-filters button.active {
+  background: #111827;
+  color: #fff;
+}
+
+.asset-grid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.asset-grid li button {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.4rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: left;
+}
+
+.asset-grid img {
+  width: 100%;
+  border-radius: 6px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.editor-canvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-card {
+  width: min(960px, 100%);
+  min-height: 540px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(17, 24, 39, 0.12);
+  padding: 2.5rem;
+}
+
+.slide-manager ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.slide-manager li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.slide-manager li > button.active {
+  font-weight: 700;
+}
+
+.text-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.text-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.presentation-mode {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #111827;
+  color: #fff;
+}
+
+.presentation-mode .slide-card {
+  color: inherit;
+}
+
+.presentation-mode .presentation {
+  width: min(1200px, 95vw);
+  min-height: 675px;
+}

@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "references": [
+    { "path": "apps/web" },
+    { "path": "apps/api" },
+    { "path": "apps/realtime" },
+    { "path": "packages/editor-core" },
+    { "path": "packages/ui" },
+    { "path": "packages/realtime-client" },
+    { "path": "packages/contracts" },
+    { "path": "packages/exporters" }
+  ]
+}
